@@ -46,7 +46,7 @@ a {
 
 img {
     max-width: 7vmax;
-
+    padding: 10px 0px;
 }
 
 #logoText {
@@ -82,18 +82,70 @@ form {
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 #data-container {
-    padding: 20px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
     box-shadow: 5px 5px 5px lightgray;
 
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    gap: 50px;
 }
 
-.form-section {
+#form-msg {
+    font-size: 20px;
+    padding: 20px 40px;
+}
+
+label {
+    font-size: 10px;
+    color: rgb(136, 136, 136);
+    font-weight: 550;
+}
+
+.form-column {
     display: flex;
+    flex-direction: column;
+}
+
+#first_name,
+#email,
+#last_name,
+#number {
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 3px;
+    box-shadow: 4px 4px 5px lightgray;
+}
+
+input:invalid {
+    outline: none;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+button {
+    align-self: flex-start;
+    margin: 20px 40px;
+    padding: 10px 50px;
+    color: white;
+    background-color: #596D48;
+    border: 0;
+    border-radius: 10px;
+}
+
+#logInText {
+    font-size: 12px;
+    font-weight: 550;
+    margin-left: 40px;
+}
+
+#logIn {
+    color: #596D48;
 }
